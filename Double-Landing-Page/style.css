@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  overflow: hidden;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 20px 50px;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: 0.5s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  background-color: rgb(110, 181, 243);
+  background-image: url("https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg");
+  background-size: cover;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  background-color: lightcoral;
+  background-image: url("https://www.mobiledokanprice.com/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-Price-in-Bangladesh.jpeg");
+  background-size: cover;
+}
+
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
+}
+
+.left,
+.right {
+  transition: width 1.2s ease-in-out;
+}
