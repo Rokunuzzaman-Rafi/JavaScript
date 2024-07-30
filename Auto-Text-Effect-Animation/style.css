@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Sans+Tagbanwa&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Noto Sans Tagbanwa", sans-serif; */
+}
